@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-weather-app</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div style="background-image: url('sunset-4086848_1280.jpg');">
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            required
+            placeholder="Enter City"
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <h1 class="weather-app-city" id="city"></h1>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                class="weather-app-icon"
+              />
+            </div>
+            <div class="weather-app-temperature" id="temp"></div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+        <p class="weather-app-details">
+          <span id="date"></span>
+          <span id="description"></span> <br />
+          Humidity: <strong id="humidity"></strong>, Wind:
+          <strong id="wind"></strong>
+        </p>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <br />
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+  <footer>
+    <p>
+        <em>
+        project was coded by
+          <a href="#" target="_blank">Nosipho Hlongwane</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+          </em> 
+        </p>
+  </footer>
+</html>
